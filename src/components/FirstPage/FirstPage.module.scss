@@ -1,6 +1,6 @@
 header {
     margin-top: 30px;
-    border-bottom: 4px solid #457B9D;
+    border-bottom: 4px solid;
     display: block;
     text-align: center;
     width:100%;
@@ -26,7 +26,6 @@ header {
 
     input {
         grid-row: 2;
-        background-color: lightgrey;
         height:37px;
         width:457px;
         justify-content: center;
@@ -51,7 +50,6 @@ header {
     
         input {
             grid-row: 2;
-            background-color: lightgrey;
             height:37px;
             width:457px;
             justify-content: center;
@@ -75,7 +73,6 @@ header {
     
         input {
             grid-row: 2;
-            background-color: lightgrey;
             height:37px;
             width:457px;
             justify-content: center;
