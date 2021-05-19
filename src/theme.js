@@ -45,3 +45,15 @@ export const liltTheme = {
     background: '#1D451F'
   }
 }
+
+export const drPepper = {
+  body: '#DBBC45',
+  text: '#133117',
+  border: '#1D451F',
+  fill: '#82AB71',
+  inputbackground: '#71CFF5',
+  button: {
+    text: '#FFFFFF',
+    background: '#1D451F'
+  }
+}

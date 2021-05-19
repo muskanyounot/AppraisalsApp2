@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { lightTheme, darkTheme, summerTheme, liltTheme } from '../../theme';
+import { lightTheme, darkTheme, summerTheme, liltTheme,  drPepper } from '../../theme';
 
 const ThemeSelector = (props) => {
 
@@ -18,6 +18,10 @@ const ThemeSelector = (props) => {
             case "liltTheme":
                 props.themeChanger(liltTheme);
                 break;
+            case "drPepper":
+                props.themeChanger(drPepper);
+                break;
+
             }
         }
 
@@ -30,6 +34,7 @@ const ThemeSelector = (props) => {
                 <option value="darkTheme">Dark</option>
                 <option value="summerTheme">Summer</option>
                 <option value="liltTheme">Lilt</option>
+                <option value="drPepper">Dr Pepper</option>
             </select>
         </div>
     )
