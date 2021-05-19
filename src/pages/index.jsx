@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import FirstPage from '../components/FirstPage';
 import QuestionBank from '../components/QuestionBank';
-const MainPage = () => {
+const Index = () => {
     return (
         <>
         <Navbar />
@@ -11,4 +11,4 @@ const MainPage = () => {
         </>
     );
 };
-export default MainPage;
+export default Index;
