@@ -6,6 +6,7 @@ import Logout from './../../images/logout.png'
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../../global';
 import { Link } from "react-router-dom";
+import ThemeSelector from '../ThemeSelector'
 
 export const Navbar = (props) => {
     return (
@@ -15,7 +16,8 @@ export const Navbar = (props) => {
                 <span className={styles.title}> IT Appraisals</span>
                 <div className={styles.profileBtn}>
                     <div className={styles.profileText}>
-                        <div className={styles.realProfileText}>Logged in as SinghM11</div>
+                        <div className={styles.realProfileText}>Logged in as SinghM11<ThemeSelector themeChanger={props.themeChanger}/></div>
+                        
                     </div>
                     <div className={styles.profileDropdown}>
                         <div className={styles.list}>
