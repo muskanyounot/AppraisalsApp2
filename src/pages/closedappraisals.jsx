@@ -1,13 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import ClosedAppraisalsHeader from '../components/ClosedAppraisalsHeader';
+import CASideMenu from '../components/CASideMenu';
+import CATable from '../components/CATable';
+
 const ClosedAppraisals = () => {
     return (
         <>
         <Navbar />
-        <ul>
-            <li>closed appraisal 1</li>
-            <li>closed appraisal 2</li>
-        </ul>
+        <ClosedAppraisalsHeader />
+        <CASideMenu />
+        <CATable />
         </>
     );
 };

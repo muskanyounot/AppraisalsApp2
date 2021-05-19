@@ -1,13 +1,12 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import GeneratedForm from '../components/GeneratedForm';
+
 const AnswersPage = () => {
     return (
         <>
         <Navbar />
-        <ul>
-            <li>check 1</li>
-            <li>check 2</li>
-        </ul>
+        <GeneratedForm />
         </>
     );
 };

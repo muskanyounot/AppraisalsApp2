@@ -1,0 +1,23 @@
+.CATContainer {
+    height: 80vh;
+    width: 25%;
+    margin: 10px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+
+    .CATList {
+        font-size: 22px;
+        border: 1px solid black;
+        background-color: white;
+    }
+
+    .CATListItem{
+        padding: 5px;
+        height: 35px;
+        border: 1px solid black;
+    }
+}
+
