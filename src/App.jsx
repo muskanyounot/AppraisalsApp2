@@ -5,9 +5,9 @@ import { GlobalStyles } from './global';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 
 //Pages
-import Index from "./pages/Index";
+import Index from "./pages/index";
 import AnswersPage from "./pages/AnswersPage";
-import ClosedAppraisals from "./pages/ClosedAppraisals";
+import ClosedAppraisals from "./pages/closedappraisals";
 import NotFoundPage from "./pages/NotFoundPage";
 
 
