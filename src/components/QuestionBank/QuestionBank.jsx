@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from './QuestionBank.module.scss';
+import { Link } from "react-router-dom";
 
 export const QuestionBank = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div className={styles.QuestionBank}>
             <div className={styles.attitude}>
@@ -123,8 +129,8 @@ export const QuestionBank = () => {
                 <input type="text" className={styles.inputtext} placeholder="Write your question here"></input>
                 <button className={styles.submitownquestion}>Add to form</button>
             </div>
-            <div className={styles.buildFormContainer}>
-                <button className={styles.buildForm}>Build Form</button>
+            <div className={styles.buildFormContainer} onClick={scrollToTop} >
+                <Link to="/answers"><button className={styles.buildForm}>Build Form</button> </Link>
             </div>
         </div>
     )

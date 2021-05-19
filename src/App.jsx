@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, summerTheme, liltTheme, drPepper } from './theme';
 import { GlobalStyles } from './global';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
+
 //Pages
 import Index from "./pages/Index";
 import AnswersPage from "./pages/AnswersPage";
@@ -13,8 +14,6 @@ import NotFoundPage from "./pages/NotFoundPage";
 export const App = () => {
 
   const [theme, setTheme] = useState(lightTheme);
-
-  const selectedTheme = lightTheme;
 
   const handleChange= (newTheme) => {
     setTheme(newTheme);
@@ -47,13 +46,7 @@ export const App = () => {
         </Router>
       </>
 
-  
-    //       {/* <button onClick={setTheme({darkTheme})}>Dark</button>
-    //       <button onClick={setTheme({lightTheme})}>Light</button> */}
-    //       <Navbar theme={selectedTheme} />
-    //       <ThemeSelector />
-    //       <FirstPage />
-    //       <QuestionBank />
+
 
   )
 }
