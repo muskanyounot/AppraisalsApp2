@@ -25,16 +25,16 @@ const GeneratedForm = (props) => {
                 </header>
             </div>
             <div className={styles.allQuestions}>
-                <h3 className={styles.pillar}>Customers</h3>
+                <h3 className={styles.pillar} id="pillar">Customers</h3>
                 {questionLists.customerQs.map(function(question, index){return getCardJSX(question, index, "customers")})}
 
-                <h3 className={styles.pillar}>Performance</h3>
+                <h3 className={styles.pillar} id="pillar">Performance</h3>
                 {questionLists.performanceQs.map(function(question, index){return getCardJSX(question, index, "performance")})}
 
-                <h3 className={styles.pillar}>Attitude</h3>
+                <h3 className={styles.pillar} id="pillar">Attitude</h3>
                 {questionLists.attitudeQs.map(function(question, index){return getCardJSX(question, index, "attitude")})}
 
-                <h3 className={styles.pillar}>Engagement</h3>
+                <h3 className={styles.pillar} id="pillar">Engagement</h3>
                 {questionLists.engagementQs.map(function(question, index){return getCardJSX(question, index, "engagement")})}              
 
                 <p>Mandatory question sections are marked with *</p>

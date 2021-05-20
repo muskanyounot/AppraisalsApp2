@@ -5,6 +5,13 @@ export const GlobalStyles = createGlobalStyle`
 * {
   text-decoration: none;
 }
+a:link {
+  color: ${({ theme }) => theme.headerText}
+}
+
+a:visited {
+  color: ${({ theme }) => theme.headerText}
+}
 
 textarea {
   background-color: ${({ theme }) => theme.inputbackground};
@@ -33,13 +40,17 @@ select {
 
   body {
     header {
-      border: ${({ theme }) => theme.body};
+      border-bottom: ${({ theme }) => theme.border};
     }
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     input {
       border: none;
       background: ${({ theme }) => theme.inputbackground};
+    }
+
+    #pillar {
+      border-bottom: ${({ theme }) => theme.emphasisBorder};
     }
   }
 
