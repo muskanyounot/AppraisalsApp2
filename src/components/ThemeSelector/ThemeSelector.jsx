@@ -1,44 +1,40 @@
-import React, { useState } from 'react';
-import { lightTheme, darkTheme, summerTheme, liltTheme,  drPepper } from '../../theme';
+import React from 'react';
+import { defaultTheme, darkTheme, calmTheme, warmTheme,  hiContrastTheme } from '../../theme';
 
 const ThemeSelector = (props) => {
-
+const option = props.theme;
     const handleChange = (e) => {
 
         switch (e.target.value) {
-            case "lightTheme":
-                props.themeChanger(lightTheme);
+            case "defaultTheme":
+                props.themeChanger(defaultTheme);
                 break;
             case "darkTheme":
                 props.themeChanger(darkTheme);
                 break;
-            case "summerTheme":
-                props.themeChanger(summerTheme);
+            case "calmTheme":
+                props.themeChanger(calmTheme);
                 break;
-            case "liltTheme":
-                props.themeChanger(liltTheme);
+            case "warmTheme":
+                props.themeChanger(warmTheme);
                 break;
-            case "drPepper":
-                props.themeChanger(drPepper);
+            case "hiContrastTheme":
+                props.themeChanger(hiContrastTheme);
                 break;
-
             }
         }
 
-
     return (
         <div>
-            <select onChange={handleChange}>
-            
-                <option value="lightTheme">Standard</option>
-                <option value="darkTheme">Dark</option>
-                <option value="summerTheme">Summer</option>
-                <option value="liltTheme">Lilt</option>
-                <option value="drPepper">Dr Pepper</option>
+            <select value={option} onChange={handleChange}>
+                <option value="defaultTheme">Default</option>
+                <option value="darkTheme">Dark Mode</option>
+                <option value="calmTheme">Calm</option>
+                <option value="warmTheme">Warm</option>
+                <option value="hiContrastTheme">High Contrast</option>
             </select>
         </div>
     )
 }
-
 
 export default ThemeSelector;

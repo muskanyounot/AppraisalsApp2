@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, summerTheme, liltTheme, drPepper } from './theme';
+import { defaultTheme, darkTheme, calmTheme, warmTheme, hiContrastTheme } from './theme';
 import { GlobalStyles } from './global';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 
@@ -9,11 +9,12 @@ import Index from "./pages/index";
 import AnswersPage from "./pages/AnswersPage";
 import ClosedAppraisals from "./pages/closedappraisals";
 import NotFoundPage from "./pages/NotFoundPage";
+import UserProfilePage from "./pages/UserProfilePage";
 
 
 export const App = () => {
 
-  const [theme, setTheme] = useState(lightTheme);
+  const [theme, setTheme] = useState(defaultTheme);
 
   // Four arrays of strings for the four question categories (manually set for now; will eventually be drawn from server)
   const [customerQs, setCustomerQs] = useState([
@@ -44,7 +45,6 @@ export const App = () => {
   return (
 
       <>
-
         <Router>
           <Switch>
             <Route exact path="/" render={(props) => (
@@ -58,7 +58,11 @@ export const App = () => {
             <Route exact path="/closedappraisals" render={(props) => (
               <ClosedAppraisals {...props} theme={theme}/>
             )} />
-        
+            
+            <Route exact path="/userprofile" render={(props) => (
+              <UserProfilePage {...props} theme={theme} themeChanger={handleChange}/>
+            )} />
+
             <Route exact path="/404" render={(props) => (
               <NotFoundPage {...props} theme={theme}/>
             )} />
@@ -67,9 +71,6 @@ export const App = () => {
           </Switch>
         </Router>
       </>
-
-
-
   )
 }
 

@@ -1,59 +1,59 @@
-export const lightTheme = {
-  body: '#FFFFFF',
-  text: '#000000',
-  border: '#457B9D',
-  fill: '#457B9D',
-  inputbackground: 'lightgrey',
+export const defaultTheme = {
+  body: '#EFEFEF',
+  text: '#616161',
+  border: '#FF3B3F',
+  fill: '#CAEBF2',
+  inputbackground: '#CAEBF2',
   button: {
-    text: '#FFFFFF',
-    background: '#1D3557'
+    text: '#EFEFEF',
+    background: '#FF3B3F'
   }
 }
 
 export const darkTheme = {
-  body: '#121212',
-  text: '#FFFFFF',
-  border: '#B3B3B3',
-  fill: '#404040',
-  inputbackground: 'whitesmoke',
+  body: '#031424',
+  text: '#8EAEBD',
+  border: '#CF6766',
+  fill: '#30415D',
+  inputbackground: '#8EAEBD',
   button: {
-    text: '#FFFFFF',
-    background: '#009AD1'
+    text: '#EFEFEF',
+    background: '#CF6766'
   }
 }
 
-export const summerTheme = {
-  body: '#F3E803',
-  text: '#000000',
-  border: '#04C1E1',
-  fill: '#75E4DE',
-  inputbackground: 'whitesmoke',
+export const calmTheme = {
+  body: '#D5D5D5',
+  text: '#616161',
+  border: '#6D7993',
+  fill: '#96858F',
+  inputbackground: '#9099A2',
   button: {
-    text: '#FFFFFF',
-    background: '#F6AC0D'
+    text: '#9099A2',
+    background: '#96858F'
   }
 }
 
-export const liltTheme = {
-  body: '#DBBC45',
-  text: '#133117',
-  border: '#1D451F',
-  fill: '#82AB71',
-  inputbackground: '#71CFF5',
+export const warmTheme = {
+  body: '#DCC7AA',
+  text: '#6B7A8F',
+  border: '#F7882F',
+  fill: '#6B7A8F',
+  inputbackground: '#F7C331',
   button: {
-    text: '#FFFFFF',
-    background: '#1D451F'
+    text: '#F7C331',
+    background: '#F7882F'
   }
 }
 
-export const drPepper = {
-  body: '#DBBC45',
-  text: '#133117',
-  border: '#1D451F',
-  fill: '#82AB71',
-  inputbackground: '#71CFF5',
+export const hiContrastTheme = {
+  body: '#000814',
+  text: '#FFD60A',
+  border: '#FFD60A',
+  fill: '#003566',
+  inputbackground: '#FFD60A',
   button: {
-    text: '#FFFFFF',
-    background: '#1D451F'
+    text: '#FFD60A',
+    background: '#003566'
   }
 }
