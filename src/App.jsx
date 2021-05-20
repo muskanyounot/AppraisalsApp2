@@ -48,7 +48,7 @@ export const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" render={(props) => (
-              <Index {...props} theme={theme} themeChanger={handleChange}/>
+              <Index {...props} theme={theme}/>
             )} />
 
             <Route exact path="/answers" render={(props) => (

@@ -9,9 +9,9 @@ const UserProfilePage = (props) => {
         <>
             <ThemeProvider theme={props.theme} >
                 <GlobalStyles />
-                <Navbar />
+                <Navbar theme={props.theme}/>
                 <p>Logged in as SINGHM11</p>
-                <ThemeSelector themeChanger={props.themeChanger}/>  
+                <ThemeSelector theme={props.theme} themeChanger={props.themeChanger}/>  
         </ThemeProvider>
         </>
     )
