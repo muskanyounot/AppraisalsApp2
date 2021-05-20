@@ -206,7 +206,8 @@
     .buildFormContainer {
         margin-top: 50px;
         margin-bottom: 50px;
-        display: grid;
+        display: flex;
+        justify-content: center;
 
           .buildForm {
             border: 4px solid rgb(2, 4, 73);
