@@ -13,7 +13,7 @@ const QuestionCard = (props) => {
         <label for="1.3">Generally meets expectations but has room for improvement in at least one area</label>
         <input className={styles.radio} name={props.radioName} type="radio" id="1.4" value="1.4"/>
         <label for="1.4">Struggles to meet performance expectations in this area</label>
-        <label className={styles.exampleQuestion} for="1.5">Please provide examples of the employee's conduct to explain your answer:*</label>
+        <label className={styles.exampleQuestion} for="1.5">Please provide examples of the employee's conduct to explain your answer*:</label>
         <textarea className={styles.exampleTextbox} type="text" id="1.5" placeholder="Enter your answer here"></textarea>
         </div>
         )

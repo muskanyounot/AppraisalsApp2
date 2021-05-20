@@ -37,6 +37,7 @@ const GeneratedForm = (props) => {
                 <h3 className={styles.pillar}>Engagement</h3>
                 {questionLists.engagementQs.map(function(question, index){return getCardJSX(question, index, "engagement")})}              
 
+                <p>Mandatory question sections are marked with *</p>
                 <button className={styles.submitFormButton}>
                     Submit
                 </button>
