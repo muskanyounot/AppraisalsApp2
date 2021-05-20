@@ -2,9 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
+  button {
+    color: ${({ theme }) => theme.button.text};
+    background: ${({ theme }) => theme.button.background};
+  }
+
   body {
     header {
-      border: ${({ theme }) => theme.accent};
+      border: ${({ theme }) => theme.body};
     }
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
