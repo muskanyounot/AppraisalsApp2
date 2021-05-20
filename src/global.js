@@ -4,7 +4,7 @@ export const GlobalStyles = createGlobalStyle`
 
 select {
   background-color: ${({ theme }) => theme.inputbackground};
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.dropdownText};
   border: none;
 }
 
@@ -20,7 +20,6 @@ select {
     }
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.5s linear;
     input {
       border: none;
       background: ${({ theme }) => theme.inputbackground};
@@ -29,12 +28,23 @@ select {
 
   navbar {
     background-color: ${({ theme }) => theme.fill};
-    border: ${({ theme }) => theme.accent};
-    transition: all 0.5s linear;
+    border-bottom: ${({ theme }) => theme.border};
+    color: ${({ theme }) => theme.headerText};
 
-    .profile-button {
+
+    .profileBtn {
       background-color: ${({ theme }) => theme.fill};
-      border: ${({ theme }) => theme.accent};
-      transition: all 0.5s linear;
+      border: ${({ theme }) => theme.border};
     }
-  }`
+
+    #profileText {
+      color: ${({ theme }) => theme.headerText};
+    }
+
+  
+
+  #profileDropdown {
+      background: ${({ theme }) => theme.fill};
+      color: ${({ theme }) => theme.text};
+    }   } 
+  `

@@ -13,7 +13,7 @@ const ClosedAppraisals = (props) => {
         <>
             <ThemeProvider theme={props.theme}>
                 <GlobalStyles />
-                <Navbar />
+                <Navbar theme={props.theme}/>
                 <ClosedAppraisalsHeader />
                 <div className={styles.CAContainer}>
                     <CASideMenu />
