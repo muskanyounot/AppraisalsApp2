@@ -11,7 +11,7 @@ const AnswersPage = (props) => {
             <ThemeProvider theme={props.theme} >
                 <GlobalStyles />
                 <Navbar />
-                <GeneratedForm />
+                <GeneratedForm customerQs={props.customerQs} performanceQs={props.performanceQs} attitudeQs={props.attitudeQs} engagementQs={props.engagementQs}/>
             </ThemeProvider>
         </>
     );
