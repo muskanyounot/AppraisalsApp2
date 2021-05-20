@@ -1,7 +1,7 @@
 navbar {
-display:grid;
+display: grid;
 grid-template-columns: repeat(10,1fr);
-border-bottom: 2px solid #457B9D;
+border-bottom: 2px solid;
 .logo {
     height:100px;
     width:250px;
@@ -13,9 +13,8 @@ border-bottom: 2px solid #457B9D;
 }
 .title {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight:300;
+    font-weight:500;
     font-size: 48px;
-
     grid-column: 2/6;
     display:flex;
     justify-content: center;
@@ -23,14 +22,11 @@ border-bottom: 2px solid #457B9D;
 }
 .profileBtn{
     grid-column:9/11;
-    // background-color: #457B9D;
-    color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight:300;
+    font-weight: 300;
     font-size:22px;
     display: inline-block;
     position:relative;
-    
 }
 
 .profileText {
@@ -40,7 +36,6 @@ border-bottom: 2px solid #457B9D;
     height:100%;
     display: flex;
     width:100%;
-
 }
 
 .realProfileText{
