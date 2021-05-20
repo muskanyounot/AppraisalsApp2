@@ -3,10 +3,7 @@ import Logo from './../../images/AdmiralLogo.svg';
 import styles from './Navbar.module.scss';
 import Account from './../../images/account.jpeg';
 import Logout from './../../images/logout.png'
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../../global';
 import { Link } from "react-router-dom";
-import ThemeSelector from '../ThemeSelector'
 
 export const Navbar = (props) => {
     return (
@@ -16,13 +13,12 @@ export const Navbar = (props) => {
                 <span className={styles.title}> IT Appraisals</span>
                 <div className={styles.profileBtn}>
                     <div className={styles.profileText}>
-                        <div className={styles.realProfileText}>Logged in as SinghM11<ThemeSelector themeChanger={props.themeChanger}/></div>
-                        
+                        <div className={styles.realProfileText}>Logged in as SinghM11</div>
                     </div>
                     <div className={styles.profileDropdown}>
                         <div className={styles.list}>
                             <img src={Account} className={styles.account}/>
-                            <div className={styles.accountText}>Account</div>
+                            <Link to="/userprofile"><div className={styles.accountText}>Account</div></Link>
                             <img src={Account} className={styles.closedAppraisals}/>
                             <Link to="/closedappraisals"><div className={styles.closedAppraisalsText}>Closed Appraisals</div></Link>
                             <img src={Logout} className={styles.logout}/>

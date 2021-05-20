@@ -1,20 +1,20 @@
 import React from 'react';
+import ThemeSelector from '../components/ThemeSelector';
 import Navbar from '../components/Navbar';
-import GeneratedForm from '../components/GeneratedForm';
 import { GlobalStyles } from '../global';
 import { ThemeProvider } from 'styled-components';
 
-
-const AnswersPage = (props) => {
+const UserProfilePage = (props) => {
     return (
         <>
             <ThemeProvider theme={props.theme} >
                 <GlobalStyles />
                 <Navbar />
-                <GeneratedForm />
-            </ThemeProvider>
+                <p>Logged in as SINGHM11</p>
+                <ThemeSelector themeChanger={props.themeChanger}/>  
+        </ThemeProvider>
         </>
-    );
+    )
 };
 
-export default AnswersPage;
+export default UserProfilePage;
