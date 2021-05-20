@@ -10,7 +10,7 @@ export const QuestionBank = () => {
 
     return (
         <div className={styles.QuestionBank}>
-            <div className={styles.attitude}>
+            <div className={styles.questionBlock}>
              <label for="attitude">Attitude Questions:</label>
                 <select>
                     <option disabled selected hidden>Choose Questions</option>
@@ -30,7 +30,7 @@ export const QuestionBank = () => {
                 <button>Add to form</button>
             </div>
 
-            <div className={styles.customer}>
+            <div className={styles.questionBlock}>
              <label for="customer">Customer Questions:</label>
                 <select>
                     <option disabled selected hidden>Choose Questions</option>
@@ -45,7 +45,7 @@ export const QuestionBank = () => {
                 <button>Add to form</button>
             </div>
 
-            <div className={styles.managerial}>
+            <div className={styles.questionBlock}>
              <label for="managerial">Managerial Questions:</label>
                 <select>
                     <option disabled selected hidden>Choose Questions</option>
@@ -61,7 +61,7 @@ export const QuestionBank = () => {
                 <button>Add to form</button>
             </div>
 
-            <div className={styles.engagement}>
+            <div className={styles.questionBlock}>
              <label for="engagement">Engagement Questions:</label>
                 <select>
                     <option disabled selected hidden>Choose Questions</option>
@@ -85,7 +85,7 @@ export const QuestionBank = () => {
                 <button>Add to form</button>
             </div>
 
-            <div className={styles.performance}>
+            <div className={styles.questionBlock}>
              <label for="performance">Performance Questions:</label>
                 <select>
                     <option disabled selected hidden>Choose Questions</option>
@@ -104,7 +104,7 @@ export const QuestionBank = () => {
                 <button>Add to form</button>
             </div>
 
-            <div className={styles.openended}>
+            <div className={styles.questionBlock}>
              <label for="openended">Open Ended Questions:</label>
                 <select>
                 <option disabled selected hidden>Choose Questions</option>

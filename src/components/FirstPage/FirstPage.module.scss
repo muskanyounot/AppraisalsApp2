@@ -1,15 +1,15 @@
 header {
     margin-top: 30px;
-    border-bottom: 4px solid;
+    border: 2px solid red;
     display: block;
     text-align: center;
     width:100%;
-    height:66px;
+    height:15vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
-    font-size:45px;
+    font-size:50px;
 }
-.appraiserName {
+.employeeInfo {
     margin-top: 25px;
     display: grid;
     justify-content: center;
@@ -30,49 +30,4 @@ header {
         justify-content: center;
         margin-top:10px;
     }
-}
-
-    .appraiseeName {
-        margin-top: 25px;
-        display: grid;
-        justify-content: center;
-        grid-template-rows: 1fr,1fr;
-    
-        label {
-            grid-row: 1;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 300;
-            font-size:30px;
-            text-align: center;
-        }
-    
-        input {
-            grid-row: 2;
-            height:37px;
-            width:457px;
-            justify-content: center;
-            margin-top:10px;
-        }
-    }
-    .appraiseeJobTitle {
-        margin-top: 25px;
-        display: grid;
-        justify-content: center;
-        grid-template-rows: 1fr,1fr;
-    
-        label {
-            grid-row: 1;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 300;
-            font-size:30px;
-            text-align: center;
-        }
-    
-        input {
-            grid-row: 2;
-            height:37px;
-            width:457px;
-            justify-content: center;
-            margin-top:10px;
-        }
 }

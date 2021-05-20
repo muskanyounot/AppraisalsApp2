@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
   button {
     color: ${({ theme }) => theme.button.text};
     background: ${({ theme }) => theme.button.background};
+    border: none;
   }
 
   body {
@@ -15,6 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     transition: all 0.5s linear;
     input {
+      border: none;
       background: ${({ theme }) => theme.inputbackground};
     }
   }
