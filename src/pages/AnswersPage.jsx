@@ -3,11 +3,11 @@ import Navbar from '../components/Navbar';
 import GeneratedForm from '../components/GeneratedForm';
 
 
-const AnswersPage = () => {
+const AnswersPage = (props) => {
     return (
         <>
         <Navbar />
-        <GeneratedForm />
+        <GeneratedForm customerQs={props.customerQs} performanceQs={props.performanceQs} attitudeQs={props.attitudeQs} engagementQs={props.engagementQs}/>
         </>
     );
 };

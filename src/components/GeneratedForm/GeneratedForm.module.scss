@@ -2,7 +2,7 @@
     height: 20vh;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     
     .formTitle {
         height: 20vh;
@@ -34,6 +34,8 @@
         width: 75%;
         border-bottom: 4px solid #457B9D;
         font-size: 40px;
+        margin: 0px;
+        margin-bottom: 20px;
     }
 
     .questionBox {
