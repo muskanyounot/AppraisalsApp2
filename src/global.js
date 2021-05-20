@@ -2,6 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
+select {
+  background-color: ${({ theme }) => theme.inputbackground};
+  color: ${({ theme }) => theme.text};
+  border: none;
+}
+
   button {
     color: ${({ theme }) => theme.button.text};
     background: ${({ theme }) => theme.button.background};

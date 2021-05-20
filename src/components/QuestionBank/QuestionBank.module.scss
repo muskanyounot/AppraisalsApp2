@@ -20,8 +20,8 @@
         }
         button {
             grid-row: 3;
-            height:37px;
-            width:100px;
+            height:20px;
+            width:90px;
             justify-self: center;
         }
     }
@@ -40,7 +40,6 @@
         }
         select {
             grid-row: 2;
-            background-color: white;
             height:37px;
             width:457px;
             justify-self: center;
@@ -67,8 +66,8 @@
         display: flex;
         justify-content: center;
 
-          .buildForm {
-            height:50px;
+          .buildButton {
+            height:40px;
             width:200px;
             justify-self: center;
             font-weight: 500;
