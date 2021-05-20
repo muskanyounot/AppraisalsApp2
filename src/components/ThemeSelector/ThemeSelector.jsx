@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { defaultTheme, darkTheme, calmTheme, warmTheme,  hiContrastTheme } from '../../theme';
 
 const ThemeSelector = (props) => {
-const option = props.theme;
+
+    const [theme, setTheme] = useState(props.theme.id);
+
+    
     const handleChange = (e) => {
+
+        setTheme(e.target.value);
 
         switch (e.target.value) {
             case "defaultTheme":
@@ -26,7 +31,7 @@ const option = props.theme;
 
     return (
         <div>
-            <select value={option} onChange={handleChange}>
+            <select value={theme} onChange={handleChange}>
                 <option value="defaultTheme">Default</option>
                 <option value="darkTheme">Dark Mode</option>
                 <option value="calmTheme">Calm</option>

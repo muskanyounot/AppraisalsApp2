@@ -11,7 +11,7 @@ const UserProfilePage = (props) => {
                 <GlobalStyles />
                 <Navbar />
                 <p>Logged in as SINGHM11</p>
-                <ThemeSelector themeChanger={props.themeChanger}/>  
+                <ThemeSelector theme={props.theme} themeChanger={props.themeChanger}/>  
         </ThemeProvider>
         </>
     )

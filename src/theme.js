@@ -1,4 +1,5 @@
 export const defaultTheme = {
+  id: "defaultTheme",
   body: '#EFEFEF',
   text: '#616161',
   border: '#FF3B3F',
@@ -11,6 +12,7 @@ export const defaultTheme = {
 }
 
 export const darkTheme = {
+  id: "darkTheme",
   body: '#031424',
   text: '#8EAEBD',
   border: '#CF6766',
@@ -23,6 +25,7 @@ export const darkTheme = {
 }
 
 export const calmTheme = {
+  id: "calmTheme",
   body: '#D5D5D5',
   text: '#616161',
   border: '#6D7993',
@@ -35,6 +38,7 @@ export const calmTheme = {
 }
 
 export const warmTheme = {
+  id: "warmTheme",
   body: '#DCC7AA',
   text: '#6B7A8F',
   border: '#F7882F',
@@ -47,6 +51,7 @@ export const warmTheme = {
 }
 
 export const hiContrastTheme = {
+  id: "hiContrastTheme",
   body: '#000814',
   text: '#FFD60A',
   border: '#FFD60A',
