@@ -130,7 +130,7 @@ export const QuestionBank = () => {
                 <button className={styles.submitownquestion}>Add to form</button>
             </div>
             <div className={styles.buildFormContainer} onClick={scrollToTop} >
-                <Link to="/answers"><button className={styles.buildForm}>Build Form</button> </Link>
+                <Link to="/answers"><button className={styles.buildButton}>Build Form</button> </Link>
             </div>
         </div>
     )
