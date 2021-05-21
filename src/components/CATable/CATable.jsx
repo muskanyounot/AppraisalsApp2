@@ -12,7 +12,7 @@ const CATable = () => {
 
     const [shouldShow1, setShouldShow1] = useState(true);
     const [shouldShow2, setShouldShow2] = useState(false);
-    const [shouldShow3, setShouldShow3] = useState(true);
+    const [shouldShow3, setShouldShow3] = useState(false);
 
     return (
         <SafeAreaView style={{flex: 1}}>
@@ -136,6 +136,36 @@ const CATable = () => {
                     </div>
                 </div>
          ) : null}
+
+        {shouldShow3 ? (
+            <div>
+                <h3 className={styles.commentsQ1}> What does Cerys do well that you want them to continue doing?</h3>
+                <p className={styles.commentsA}>Respondee 1 - answer</p>
+                <p className={styles.commentsA}>Respondee 2 - answer </p>
+                <p className={styles.commentsA}>Respondee 3 - answer </p>
+                <p className={styles.commentsA}>Respondee 4 - answer</p>
+
+                <h3 className={styles.commentsQ1}> What improvements could Cerys make?</h3>
+                <p className={styles.commentsA}>Respondee 1 - answer</p>
+                <p className={styles.commentsA}>Respondee 2 - answer </p>
+                <p className={styles.commentsA}>Respondee 3 - answer </p>
+                <p className={styles.commentsA}>Respondee 4 - answer</p>
+
+                <h3 className={styles.commentsQ1}> Does Cerys communicate well?</h3>
+                <p className={styles.commentsA}>Respondee 1 - answer</p>
+                <p className={styles.commentsA}>Respondee 2 - answer </p>
+                <p className={styles.commentsA}>Respondee 3 - answer </p>
+                <p className={styles.commentsA}>Respondee 4 - answer</p>
+
+                <h3 className={styles.commentsQ1}> Does Cerys have a good understanding of your work, aspirations and career goals?</h3>
+                <p className={styles.commentsA}>Respondee 1 - answer</p>
+                <p className={styles.commentsA}>Respondee 2 - answer </p>
+                <p className={styles.commentsA}>Respondee 3 - answer </p>
+                <p className={styles.commentsA}>Respondee 4 - answer</p> 
+                <button>Export as PDF</button>
+            </div>
+           
+        ) : null}
         </View>
         </SafeAreaView>
 
