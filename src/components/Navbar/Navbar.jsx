@@ -26,7 +26,7 @@ export const Navbar = (props) => {
                             <img src={Account} className={styles.closedAppraisals}/>
                             <Link to="/closedappraisals"><div className={styles.closedAppraisalsText}>Closed Appraisals</div></Link>
                             <img src={Logout} className={styles.logout}/>
-                            <div className={styles.logoutText}>Log Out</div>
+                            <div className={styles.logoutText} id="logoutText">Log Out</div>
                         </div>
                     </div>
                 </div>

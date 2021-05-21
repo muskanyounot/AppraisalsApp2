@@ -22,17 +22,17 @@ const CATable = () => {
                     <Button
                 title="Scores by question"
                 className={styles.headingOption1}
-                onPress={() => setShouldShow1(!shouldShow1)}
+                onPress={() => {setShouldShow1(true); setShouldShow2(false); setShouldShow3(false);}}
                 />
                 <Button
                 title="Year on year comparison"
                 className={styles.headingOption2}
-                onPress={() => setShouldShow2(!shouldShow2)}
+                onPress={() => {setShouldShow1(false); setShouldShow2(true); setShouldShow3(false);}}
                 />
                 <Button
                 title="Examples and comments"
                 className={styles.headingOption3}
-                onPress={() => setShouldShow3(!shouldShow3)}
+                onPress={() => {setShouldShow1(false); setShouldShow2(false); setShouldShow3(true);}}
                 />
             </section>
 

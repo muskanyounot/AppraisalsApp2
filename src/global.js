@@ -70,7 +70,9 @@ select {
       color: ${({ theme }) => theme.headerText};
     }
 
-  
+    #logoutText {
+      color: ${({ theme }) => theme.headerText};
+    }
 
   #profileDropdown {
       background: ${({ theme }) => theme.fill};
