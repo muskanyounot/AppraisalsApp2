@@ -10,7 +10,12 @@ const Index = (props) => {
         <>
         <Navbar theme={props.theme} themeChanger={props.themeChanger}/>
         <FirstPage theme={props.theme} />
-        <QuestionBank theme={props.theme} />
+        <QuestionBank
+            theme={props.theme}
+            addCustomerQ={props.addCustomerQ}
+            addPerformanceQ={props.addPerformanceQ}
+            addAttitudeQ={props.addAttitudeQ}
+            addEngagementQ={props.addEngagementQ}/>
         </>
     );
 };

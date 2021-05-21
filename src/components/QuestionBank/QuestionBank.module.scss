@@ -23,6 +23,16 @@
             height:20px;
             width:90px;
             justify-self: center;
+
+        }
+
+        button:hover {
+            box-shadow: 0 5px #666;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: translateY(4px);
         }
     }
 
@@ -66,12 +76,21 @@
         display: flex;
         justify-content: center;
 
-          .buildButton {
+        .buildButton {
             height:40px;
             width:200px;
             justify-self: center;
             font-weight: 500;
             font-size:large;
+        }
+
+        .buildButton:hover {
+            box-shadow: 0 5px #666;
+            cursor: pointer;
+        }
+
+        .buildButton:active {
+            transform: translateY(4px);
         }
     }
   

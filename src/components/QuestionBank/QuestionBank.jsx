@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './QuestionBank.module.scss';
 import { Link } from "react-router-dom";
 
-export const QuestionBank = () => {
+export const QuestionBank = (props) => {
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     }
 
+    const handleAttitudeChange = (e) => {
+        setAttitudeQuestion(e.target.value)
+    }
+
+    const handleCustomerChange = (e) => {
+        setCustomerQuestion(e.target.value)
+    }
+
+    const handleEngagementChange = (e) => {
+        setEngagementQuestion(e.target.value)
+    }
+
+    const handlePerformanceChange = (e) => {
+        setPerformanceQuestion(e.target.value)
+    }
+
+    const[attitudeQuestion, setAttitudeQuestion] = useState("");
+    const[customerQuestion, setCustomerQuestion] = useState("");
+    const[engagementQuestion, setEngagementQuestion] = useState("");
+    const[performanceQuestion, setPerformanceQuestion] = useState("");
+
     return (
         <div className={styles.QuestionBank}>
             <div className={styles.questionBlock}>
              <label for="attitude">Attitude Questions:</label>
-                <select>
+                <select onChange={handleAttitudeChange}>
                     <option disabled selected hidden>Choose Questions</option>
                     <option>Does this employee act professionally?</option>
                     <option>Does this employee use their time effectively?</option>
@@ -27,12 +48,12 @@ export const QuestionBank = () => {
                     <option>Have you experienced any difficulties with the level of the employee’s motivation?</option>
                     <option>How does the employee demonstrate their motivation and commitment to success in the company?</option>
                 </select>
-                <button>Add to form</button>
+                <button onClick={() => props.addAttitudeQ(attitudeQuestion)}>Add to form</button>
             </div>
 
             <div className={styles.questionBlock}>
              <label for="customer">Customer Questions:</label>
-                <select>
+                <select onChange={handleCustomerChange}>
                     <option disabled selected hidden>Choose Questions</option>
                     <option>Does this employee prioritize the needs of the customer over other duties?</option>
                     <option>Does this employee communicate well with customers?</option>
@@ -42,10 +63,10 @@ export const QuestionBank = () => {
                     <option>Is this employee effective at managing their own emotions and the emotions of others?</option>
                     <option>Does this employee take initiative to seek clarification on things they don’t understand?</option>
                 </select>
-                <button>Add to form</button>
+                <button onClick={() => props.addCustomerQ(customerQuestion)}>Add to form</button>
             </div>
 
-            <div className={styles.questionBlock}>
+            {/* <div className={styles.questionBlock}>
              <label for="managerial">Managerial Questions:</label>
                 <select>
                     <option disabled selected hidden>Choose Questions</option>
@@ -59,11 +80,11 @@ export const QuestionBank = () => {
                     <option>Does this manager always control emotions and behavior, even when faced with high-conflict or stressful situations?</option>
                 </select>
                 <button>Add to form</button>
-            </div>
+            </div> */}
 
             <div className={styles.questionBlock}>
              <label for="engagement">Engagement Questions:</label>
-                <select>
+                <select onChange={handleEngagementChange}>
                     <option disabled selected hidden>Choose Questions</option>
                     <option>Does this employee communicate well with colleagues?</option>
                     <option>Does this employee communicate well with supervisors?</option>
@@ -82,12 +103,12 @@ export const QuestionBank = () => {
                     <option>Do the actions of this employee show the core values of the company and seek to inspire a positive company culture?</option>
                     <option>Can you provide an example of how the employee has positively contributed using leadership?</option>
                 </select>
-                <button>Add to form</button>
+                <button onClick={() => props.addEngagementQ(engagementQuestion)}>Add to form</button>
             </div>
 
             <div className={styles.questionBlock}>
              <label for="performance">Performance Questions:</label>
-                <select>
+                <select onChange={handlePerformanceChange}>
                     <option disabled selected hidden>Choose Questions</option>
                     <option>Does this employee ask questions to evaluate issues?</option>
                     <option>Is this employee able to work autonomously (without direction)?</option>
@@ -101,10 +122,10 @@ export const QuestionBank = () => {
                     <option>Does this employee understand both the short-term and long-term implications of their decisions?</option>
                     <option>Are the employee’s work methods and approach to accomplishing the job effective, efficient, and continuously improving?</option>
                 </select>
-                <button>Add to form</button>
+                <button onClick={() => props.addPerformanceQ(performanceQuestion)}>Add to form</button>
             </div>
 
-            <div className={styles.questionBlock}>
+            {/* <div className={styles.questionBlock}>
              <label for="openended">Open Ended Questions:</label>
                 <select>
                 <option disabled selected hidden>Choose Questions</option>
@@ -114,7 +135,7 @@ export const QuestionBank = () => {
                 <option>What sets this employee apart from others on their team or within the organization?</option>
                 </select>
                 <button>Add to form</button>
-            </div>
+            </div> */}
 
             <div className={styles.ownquestion}>
                 <label for="ownquestion" className={styles.ownQuestionLabel}>Write your own question</label>
