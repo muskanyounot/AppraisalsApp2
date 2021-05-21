@@ -27,6 +27,9 @@ grid-template-columns: repeat(10,1fr);
     font-size:22px;
     display: inline-block;
     position:relative;
+    :hover {
+        cursor: pointer;
+      }
 }
 
 .profileText {

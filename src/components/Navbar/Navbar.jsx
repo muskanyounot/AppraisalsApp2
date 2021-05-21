@@ -2,7 +2,8 @@ import React from 'react';
 import Logo from './../../images/AdmiralLogo.svg';
 import styles from './Navbar.module.scss';
 import Account from './../../images/account.jpeg';
-import Logout from './../../images/logout.png'
+import Closed from './../../images/closedapp.png';
+import Logout from './../../images/logout2.png'
 import { Link } from "react-router-dom";
 import { GlobalStyles } from '../../global';
 import { ThemeProvider } from 'styled-components';
@@ -23,7 +24,7 @@ export const Navbar = (props) => {
                         <div className={styles.list}>
                             <img src={Account} className={styles.account}/>
                             <Link to="/userprofile"><div className={styles.accountText}>Account</div></Link>
-                            <img src={Account} className={styles.closedAppraisals}/>
+                            <img src={Closed} className={styles.closedAppraisals}/>
                             <Link to="/closedappraisals"><div className={styles.closedAppraisalsText}>Closed Appraisals</div></Link>
                             <img src={Logout} className={styles.logout}/>
                             <div className={styles.logoutText} id="logoutText">Log Out</div>

@@ -6,11 +6,15 @@ export const GlobalStyles = createGlobalStyle`
   text-decoration: none;
 }
 a:link {
-  color: ${({ theme }) => theme.headerText}
+  color: ${({ theme }) => theme.headerText};
 }
 
 a:visited {
-  color: ${({ theme }) => theme.headerText}
+  color: ${({ theme }) => theme.headerText};
+}
+
+::placeholder {
+  color: ${({ theme }) => theme.dropdownText};
 }
 
 textarea {
@@ -35,7 +39,7 @@ select {
   }
 
   button:hover {
-
+    cursor: pointer;
   }
 
   body {
@@ -56,7 +60,6 @@ select {
 
   navbar {
     background-color: ${({ theme }) => theme.fill};
-    border-bottom: ${({ theme }) => theme.border};
     color: ${({ theme }) => theme.headerText};
 
 

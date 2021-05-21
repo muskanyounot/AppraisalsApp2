@@ -7,7 +7,6 @@ import styles from './closedappraisals.module.scss';
 import { GlobalStyles } from '../global';
 import { ThemeProvider } from 'styled-components';
 
-
 const ClosedAppraisals = (props) => {
 
     return (
