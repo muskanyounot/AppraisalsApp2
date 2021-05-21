@@ -6,6 +6,7 @@ import CATable from '../components/CATable';
 import styles from './closedappraisals.module.scss';
 import { GlobalStyles } from '../global';
 import { ThemeProvider } from 'styled-components';
+import Test from '../components/Test';
 
 const ClosedAppraisals = (props) => {
 
